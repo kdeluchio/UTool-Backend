@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="dbUTools.db" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UTools.Application\UTools.Application.csproj" />
+    <ProjectReference Include="..\UTools.Infra.CrossCutting\UTools.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\UTools.Infra.Data\UTools.Infra.Data.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="dbUTools.db">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>	
+
+</Project>
