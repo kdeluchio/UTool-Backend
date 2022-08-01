@@ -26,7 +26,7 @@ namespace UTools.Domain.Commands
 
         private bool Validate(Empresa entity)
         {
-            if (string.IsNullOrEmpty(entity.CNPJ))
+            if (entity == null || string.IsNullOrEmpty(entity.CNPJ))
             {
                 MessageError = "CNPJ não foi localizado na receita federal";
                 return false;

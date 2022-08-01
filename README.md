@@ -9,6 +9,7 @@ Linguagem: C# .Net Core 3.1
 Banco de dados: SQLite
 Design: DDD
 ORM: Entity Framework Core
+Teste Unitário: xUnit
 
 
 ### Estapas de Instalação
